@@ -183,12 +183,6 @@
   }
 }
 
-.moles{
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  gap: 10px;
-}
-
 .main{
   justify-content: center;
 }

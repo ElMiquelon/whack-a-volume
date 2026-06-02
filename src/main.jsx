@@ -6,6 +6,6 @@ import App from './App.jsx'
 alert("Da clic para comenzar a reproducir el audio");
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App delayMoles={1800} delayMoleSpawn={300}/>
+    <App delayMoles={1800} delayMoleSpawn={300}  columnMoles={3} rowMoles={3}/>
   </StrictMode>,
 )
