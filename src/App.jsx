@@ -32,6 +32,7 @@ function App({delayMoles=1800, delayMoleSpawn=300, columnMoles=3, rowMoles=3}) {
   const [currentButtons, setCurrentButtons] = useState(generateButtons(totalMoles));
 
   const width = '150px'; //TODO esto debe ser reactivo
+  //50 es el minimo legible
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -49,13 +50,13 @@ function App({delayMoles=1800, delayMoleSpawn=300, columnMoles=3, rowMoles=3}) {
       gap:'10px'
     }}
     >
-      <AnimatePresence mode='wait'>
+      <AnimatePresence mode='sync'>
         {currentButtons.map((btn, i) => {
           let mole = 0;
           
           if(btn.text >= 0){
             mole = <motion.img key={btn.id}
-            src='/img/Mole.png'
+            src={'/img/numberedMoles/Mole_' + btn.text + '.webp'}
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 50, opacity: 0 }}
