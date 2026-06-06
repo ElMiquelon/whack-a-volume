@@ -1,16 +1,20 @@
-# React + Vite
+# whack-a-volume
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A [terrible UX](https://www.youtube.com/shorts/itUDp-MVQfY) inspired project made with React.js; adjust your volume in a whack-a-mole fashion.
 
-Currently, two official plugins are available:
+Instead of using simple, plain and boring volume sliders; you must whack (click) the volume you desire.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+You can define the number of moles per row and column to get a perfect layout; and also you can set the time moles stay on screen and the length of the 'spawn' animation.
 
-## React Compiler
+As of now it only works as a demo. Planning on making it a real React library.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+##Local setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run it locally you need npm installed and run the following commands:
+
+```
+npm install
+npm start
+npm run dev
+```
