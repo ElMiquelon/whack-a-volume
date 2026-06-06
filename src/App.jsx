@@ -43,7 +43,7 @@ function App({delayMoles=1800, delayMoleSpawn=300, columnMoles=3, rowMoles=3}) {
   }, [delayMoles]);
 
   return <div>
-    <audio ref={audioRef} src="/BadApple.mp3" />
+    <audio ref={audioRef} src="./BadApple.mp3" />
     <div style={{
       display:'grid',
       gridTemplateColumns:'repeat(' + columnMoles + ', ' + width + ')',
@@ -56,7 +56,7 @@ function App({delayMoles=1800, delayMoleSpawn=300, columnMoles=3, rowMoles=3}) {
           
           if(btn.text >= 0){
             mole = <motion.img key={btn.id}
-            src={'/img/numberedMoles/Mole_' + btn.text + '.webp'}
+            src={'./img/numberedMoles/Mole_' + btn.text + '.webp'}
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 50, opacity: 0 }}
@@ -73,9 +73,9 @@ function App({delayMoles=1800, delayMoleSpawn=300, columnMoles=3, rowMoles=3}) {
             gridTemplateColumns: width, // TODO hacerlo reactivo
             gridTemplateRows: width,    // TODO hacerlo reactivo
           }}>
-            <img src="/img/DirtFG.png" style={{gridArea:'1/1', zIndex:1, width:width}}/>
+            <img src="./img/DirtFG.png" style={{gridArea:'1/1', zIndex:1, width:width}}/>
             {mole}
-            <img src='/img/DirtBG.png'style={{gridArea:'1/1', zIndex:3, width:width, pointerEvents:'none'}}/>
+            <img src='./img/DirtBG.png'style={{gridArea:'1/1', zIndex:3, width:width, pointerEvents:'none'}}/>
           </div>
       })}
       </AnimatePresence>
